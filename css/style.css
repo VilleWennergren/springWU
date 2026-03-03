@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+
+body{
+display: grid;
+grid-template-rows: auto 1fr auto;
+grid-template-columns: 25% 1fr 1fr 35%;
+grid-template-areas:
+"nav nav nav nav"
+"as as main main"
+"footer footer footer footer";
+}
+
+nav{
+    grid-area: nav;
+    background-color: white;
+    max-height: 15%;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: as;
+    max-width: 600px;
+}
+
+footer{
+    grid-area: footer;
+}
