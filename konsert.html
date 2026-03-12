@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Fotograf Wennergren</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a href="kontakta.html">Kontakta mig</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="page-header">
+        <h1>KONSERT</h1>
+        <p>Mitt Konsertfotografi</p>
+    </section>
+
+
+    <div class="portfolio-container">
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img/hero/konsert-1.webp" alt="Sport" />
+                <div class="portfolio-overlay">Konsert</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img/konsert/konsert-2.webp" alt="Sport" />
+                <div class="portfolio-overlay">Konsert</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img/konsert/konsert-3.webp" alt="Sport" />
+                <div class="portfolio-overlay">Konsert</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img/konsert/konsert-4.webp" alt="Sport" />
+                <div class="portfolio-overlay">Konsert</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img/konsert/konsert-5.webp" alt="Sport" />
+                <div class="portfolio-overlay">Konsert</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img/konsert/konsert-7.webp" alt="Sport" />
+                <div class="portfolio-overlay">Konsert </div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img/konsert/konsert-8.webp" alt="Sport" />
+                <div class="portfolio-overlay">Konsert</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="imageModal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal(event)">&times;</button>
+            <img id="modalImage" src="" alt="Full size image">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script>
+        function openModal(element) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const img = element.querySelector('img');
+            modalImage.src = img.src;
+            modal.style.display = 'flex';
+        }
+
+        function closeModal(event) {
+            if (event.target.id === 'imageModal' || event.target.classList.contains('modal-close')) {
+                document.getElementById('imageModal').style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

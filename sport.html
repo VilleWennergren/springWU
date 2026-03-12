@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Fotograf Wennergren</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a href="kontakta.html">Kontakta mig</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="page-header">
+        <h1>SPORT</h1>
+        <p>Mitt Sportfotografi</p>
+    </section>
+
+    <div class="portfolio-container">
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-1.jpg" alt="Sport" />
+                <div class="portfolio-overlay">Göteborgsvarvet 25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-2.jpg" alt="Sport" />
+                <div class="portfolio-overlay">Göteborgsvarvet 25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-3.jpg" alt="Sport" />
+                <div class="portfolio-overlay">PC25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-4.jpg" alt="Sport" />
+                <div class="portfolio-overlay">GC25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-5.jpg" alt="Sport" />
+                <div class="portfolio-overlay">SSL25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-6.jpg" alt="Sport" />
+                <div class="portfolio-overlay">SSL25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-7.jpg" alt="Sport" />
+                <div class="portfolio-overlay">SSL25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-8.jpg" alt="Sport" />
+                <div class="portfolio-overlay">SSL25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-9.jpg" alt="Sport" />
+                <div class="portfolio-overlay">SSL25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-10.jpg" alt="Sport" />
+                <div class="portfolio-overlay">GIC26</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-11.jpg" alt="Sport" />
+                <div class="portfolio-overlay">GIC26</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-12.jpg" alt="Sport" />
+                <div class="portfolio-overlay">GIC26</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-13.jpg" alt="Sport" />
+                <div class="portfolio-overlay">GIC26</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-14.jpg" alt="Sport" />
+                <div class="portfolio-overlay">Volleyboll</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-15.jpg" alt="Sport" />
+                <div class="portfolio-overlay">Hovfjallet25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-16.jpg" alt="Sport" />
+                <div class="portfolio-overlay">Hovfjallet25</div>
+            </div>
+            <div class="portfolio-item" onclick="openModal(this)">
+                <img src="img//sport/sport-17.jpg" alt="Sport" />
+                <div class="portfolio-overlay">Hovfjallet25</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="imageModal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal(event)">&times;</button>
+            <img id="modalImage" src="" alt="Full size image">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="js/Java.js"></script>
+
+</body>
+
+</html>
