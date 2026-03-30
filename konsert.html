@@ -22,6 +22,12 @@
                 <li><a href="om.html">Om mig</a></li>
                 <li><a href="kontakta.html">Kontakta mig</a></li>
             </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -34,31 +40,31 @@
 
     <div class="portfolio-container">
         <div class="portfolio-grid">
-            <div class="portfolio-item" onclick="openModal(this)">
+            <div class="portfolio-item">
                 <img src="img/hero/konsert-1.webp" alt="Sport" />
                 <div class="portfolio-overlay">Konsert</div>
             </div>
-            <div class="portfolio-item" onclick="openModal(this)">
+            <div class="portfolio-item">
                 <img src="img/konsert/konsert-2.webp" alt="Sport" />
                 <div class="portfolio-overlay">Konsert</div>
             </div>
-            <div class="portfolio-item" onclick="openModal(this)">
+            <div class="portfolio-item">
                 <img src="img/konsert/konsert-3.webp" alt="Sport" />
                 <div class="portfolio-overlay">Konsert</div>
             </div>
-            <div class="portfolio-item" onclick="openModal(this)">
+            <div class="portfolio-item">
                 <img src="img/konsert/konsert-4.webp" alt="Sport" />
                 <div class="portfolio-overlay">Konsert</div>
             </div>
-            <div class="portfolio-item" onclick="openModal(this)">
+            <div class="portfolio-item">
                 <img src="img/konsert/konsert-5.webp" alt="Sport" />
                 <div class="portfolio-overlay">Konsert</div>
             </div>
-            <div class="portfolio-item" onclick="openModal(this)">
+            <div class="portfolio-item">
                 <img src="img/konsert/konsert-7.webp" alt="Sport" />
                 <div class="portfolio-overlay">Konsert </div>
             </div>
-            <div class="portfolio-item" onclick="openModal(this)">
+            <div class="portfolio-item">
                 <img src="img/konsert/konsert-8.webp" alt="Sport" />
                 <div class="portfolio-overlay">Konsert</div>
             </div>
@@ -77,22 +83,9 @@
         <p>&copy; 2026 Alla rättigheter förbehållna.</p>
     </footer>
 
-    <script>
-        function openModal(element) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            const img = element.querySelector('img');
-            modalImage.src = img.src;
-            modal.style.display = 'flex';
-        }
 
-        function closeModal(event) {
-            if (event.target.id === 'imageModal' || event.target.classList.contains('modal-close')) {
-                document.getElementById('imageModal').style.display = 'none';
-            }
-        }
-    </script>
+    <script src="js/Java.js"></script>
 
 </body>
 
-</html>
+</html> 
