@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" >
 </head>
 <body>
 
@@ -38,19 +38,19 @@
     <div class="portfolio-container">
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <a href="bilar.html"><img src="img//hero/bilar-1.webp" alt="Bilar" /></a>
+                <a href="bilar.html"><img src="img//hero/bilar-1.webp" alt="Bilar" ></a>
                 <div class="portfolio-overlay">Fordon</div>
             </div>
             <div class="portfolio-item">
-                <a href="konsert.html"><img src="img//hero/konsert-1.webp" alt="Konsert" /></a>
+                <a href="konsert.html"><img src="img//hero/konsert-1.webp" alt="Konsert" ></a>
                 <div class="portfolio-overlay">Konsert</div>
             </div>
             <div class="portfolio-item">
-                <a href="natur.html"><img src="img//hero/nature-1.webp" alt="Natur" /></a>
+                <a href="natur.html"><img src="img//hero/nature-1.webp" alt="Natur" ></a>
                 <div class="portfolio-overlay">Natur</div>
             </div>
             <div class="portfolio-item">
-                <a href="sport.html"><img src="img//hero/sport-1.webp" alt="Sport" /></a>
+                <a href="sport.html"><img src="img//hero/sport-1.webp" alt="Sport" ></a>
                 <div class="portfolio-overlay">Sport</div>
             </div>
         </div>
@@ -60,7 +60,7 @@
     <div id="imageModal" class="modal" onclick="closeModal(event)">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal(event)">&times;</button>
-            <img id="modalImage" src="" alt="Full size image">
+            <img id="modalImage" src="portfolio.html" alt="Full size image">
         </div>
     </div>
 
@@ -68,21 +68,6 @@
         <p>&copy; 2026 Alla rättigheter förbehållna.</p>
     </footer>
 
-    <script>
-        function openModal(element) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            const img = element.querySelector('img');
-            modalImage.src = img.src;
-            modal.style.display = 'flex';
-        }
-
-        function closeModal(event) {
-            if (event.target.id === 'imageModal' || event.target.classList.contains('modal-close')) {
-                document.getElementById('imageModal').style.display = 'none';
-            }
-        }
-    </script>
 
     <script src="js/Java.js"></script>
 

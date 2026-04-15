@@ -625,7 +625,6 @@ footer p {
 
   .portfolio-grid {
     grid-template-columns: 1fr;
-    auto-rows: 300px;
     gap: 25px;
   }
 
@@ -685,9 +684,5 @@ footer p {
 
   .nav-menu a {
     letter-spacing: 1px;
-  }
-
-  .portfolio-grid {
-    auto-rows: 250px;
   }
 }
