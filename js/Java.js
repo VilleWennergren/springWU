@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Hamburger menu
+  // Hamburger meny
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
 
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Scroll reveal
+  // Skrolla animattion
   const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
 
   const revealOnScroll = () => {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   revealOnScroll();
 
 
-  // Modal
+  // bildvisning modal
   const modal = document.getElementById('imageModal');
   const modalImage = document.getElementById('modalImage');
 
@@ -48,14 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Add click to all items
+  // Klicka på portfolio för att öpnna 
   const portfolioItems = document.querySelectorAll('.portfolio-item');
 
   portfolioItems.forEach(item => {
     item.addEventListener('click', () => openModal(item));
   });
 
-  // Close modal
+  // stäng bildvisning modal
   if (modal) {
     modal.addEventListener('click', closeModal);
   }
